@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+   <bean id="prod" class="com.demo.beans.Product" init-method="MyInit" destroy-method="MyDestroy">
+   	<property name="pid" value="1"></property>
+   	<property name="pname" value="Chair"></property>
+   	<property name="expdate" value="2024-10-12"></property>
+   	<property name="cid" value="1"></property>
+   </bean>
+
+</beans>
